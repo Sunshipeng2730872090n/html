@@ -2,27 +2,51 @@
 <html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
-    <title>超链接示例</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>网络信息示例</title>
     <style>
         body {
             display: flex;
+            flex-direction: column;  /* 改为垂直排列 */
             justify-content: center;
             align-items: center;
             min-height: 100vh;
             margin: 0;
+            font-family: Arial, sans-serif;
         }
         a {
             font-size: 24px;
             text-decoration: none;
             color: #007bff;
+            margin-bottom: 30px;  /* 增加下边距 */
         }
         a:hover {
             color: #0056b3;
             text-decoration: underline;
         }
+        .ip-list {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+        }
+        .ip-list li {
+            font-size: 20px;
+            color: #28a745;
+            padding: 8px 15px;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            margin: 10px 0;
+            font-family: 'Courier New', monospace; /* 等宽字体更适合显示IP */
+        }
     </style>
 </head>
 <body>
-    <a href="#">点击这里</a>
+    <a href="#">访问示例网站</a>
+    
+    <ul class="ip-list">
+        <li>255.255.255.255</li>
+        <!-- 可以继续添加其他IP -->
+    </ul>
 </body>
 </html>
